@@ -1,0 +1,1 @@
+This is a personal project to collect data on taxes levied in india on a bunch of stuff.
