@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+}
+section.full-page {
+  height: 100vh;
+  width: 100%;
+}
+.welcome {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px;
+  flex-direction: column;
+}
+.welcome em {
+  font-size: 30px;
+  line-height: 40px;
+}
+.welcome span {
+  font-size: 20px;
+  align-self: flex-end;
+  margin-top: 10px;
+  margin-right: 50px;
+}
