@@ -3,6 +3,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chart.css">
+  <script defer src="/chart.js"></script>
   <title>Document</title>
 </head>
 <body>
@@ -14,11 +16,21 @@
   <section id="preface" class="preface">
     In this project I am collecting tax composition of everyday stuff that I encounter. With focus on certain highly taxed items.
     <br><br>
-    Below are some of the items I have got to. I assume a income tax of 20%.
+    Below are some of the items I have got to. I assume a income tax of 20%. The graph tries to portray the percentage cut taken by various taxes.
   </section>
   <section class="item">
     <h2>Petrol - Dec 2020</h2>
-    <!-- <img src=""> -->
+    <chart>
+      <chartData>
+        [{ "type": "cost", "head": "Crude Oil + refining + marketing cost", "value": 25.6 },
+         { "type": "cost", "head": "Petrol Pump Commission", "value": 3.55 },
+         { "type": "cost", "head": "Transport", "value": 0.36 },
+         { "type": "indirect-tax", "head": "Central Govt Excise + Cess", "value": 32.04 },
+         { "type": "indirect-tax", "head": "State Govt VAT", "value": 18.46 },
+         { "type": "retail", "head": "Final Retail Price", "value": 80 },
+         { "type": "direct-tax", "head": "Income Tax", "value": 20 }]
+      </chartData>
+    </chart>
     <span>Primary Source - <a target="_blank" href="https://finshots.in/infographic/breaking-down-the-cost-of-a-litre-of-petrol/">https://finshots.in/infographic/breaking-down-the-cost-of-a-litre-of-petrol/</a></span>
   </section>
 </body>

@@ -1,0 +1,63 @@
+chartdata {
+  display: none;
+}
+chart {
+  display: flex;
+  height: 402px;
+  width: 1000px;
+  border: 1px dashed #aaa;
+  margin: auto;
+  padding-left: 15px;
+  align-items: flex-end;
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", "Roboto", "Roboto Light", sans-serif;
+  position: relative;
+}
+
+chart>.bars {
+  flex-basis: 0;
+  flex-grow: 1;
+  margin-right: 15px;
+  text-align: center;
+  padding: 0 5px;
+}
+
+chart>.bars>span.value {
+  font-weight: bold;
+}
+
+chart>.bars.cost {
+  border: 1px solid #f5415f;
+  background: #f5415f;
+}
+
+chart>.bars.indirect-tax {
+  background: repeating-linear-gradient(30deg, transparent, #f5415f 1px, transparent 2px, transparent 10px);
+  border: 1px dashed #f5415f;
+}
+
+chart>.bars.indirect-tax>span {
+  background: #fdeedd;
+  box-shadow: 0px 0px 0px 2px #fdeedd;
+}
+
+chart>.bars.retail {
+  background: #000000;
+  color: #fdeedd;
+}
+
+chart>.bars.direct-tax {
+  background: repeating-linear-gradient(30deg, transparent, #000000 1px, transparent 2px, transparent 10px);
+  border: 1px dashed #000000;
+}
+
+chart>.bars.direct-tax>span {
+  background: #fdeedd;
+  box-shadow: 0px 0px 0px 2px #fdeedd;
+}
+chart>.statbox {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border: 1px solid #000000;
+  padding: 10px;
+}
