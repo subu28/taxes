@@ -26,6 +26,6 @@ for (const chart of charts) {
   }
   const div = document.createElement('div');
   div.className = "statbox";
-  div.innerHTML = '<span> Input Cost: <strong>' + input + '%</strong></span><br><span> Indirect Tax: <strong>' + indirect + '%</strong></span><br><span>Direct Tax: <strong>' + direct + '%</strong></span>';
+  div.innerHTML = '<span> Input Cost: <strong>' + input.toFixed(2) + '%</strong></span><br><span> Indirect Tax: <strong>' + indirect.toFixed(2) + '%</strong></span><br><span>Direct Tax: <strong>' + direct + '%</strong></span>';
   chart.append(div);
 }
